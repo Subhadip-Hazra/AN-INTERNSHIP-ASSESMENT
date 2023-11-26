@@ -6,7 +6,7 @@
 </p>
 ## Demo
 
-Experience the OTP verification live:
+Siksha Internship platform live:
 
 [![Demo View](https://subhadip-hazra.github.io/InfinityCore_Technologies_Internship_Project/#)
 
