@@ -4,6 +4,11 @@
 <p align="center">
   <img src="images/bg_image.jpg" alt="Shiksha Logo">
 </p>
+## Demo
+
+Experience the OTP verification live:
+
+[![Demo View](https://subhadip-hazra.github.io/InfinityCore_Technologies_Internship_Project/#)
 
 <p align="center">
   <em>Explore exciting internship opportunities, discover features, testimonials, and take a step towards your career goals!</em>
