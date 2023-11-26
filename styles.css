@@ -1,18 +1,21 @@
+/* Import necessary fonts */
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Josefin+Sans:wght@100&family=Lilita+One&family=Martian+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Croissant+One&family=Fuggles&family=Josefin+Sans:wght@100&family=Lilita+One&family=Martian+Mono:wght@300&family=PT+Serif:ital,wght@1,700&family=Young+Serif&display=swap');
+/* My root variables for color scheme */
 :root {
+    /* My color variables */
     --primary-color: #f10a0a;
-    --secondary-color: #39099881;
+    --secondary-color: #390998ef;
     --background-color: #030327fb;
-    --next-background-color:#2b03f43c;
-    --accent-color:#e3dfe3;
+    --testimonial-color:#e3dfe3;
     --text-color-light: #f7f3f3;
-    --text-color-dark: #0000009f;
     --box-shadow-color:#f1ecfd;
 }
+/* General styles */
 body,
 ul {
+     /* Body styles */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif; /* Set a default font */
@@ -31,6 +34,7 @@ header {
     position: fixed;
     width: 100%;
 }
+/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -40,18 +44,20 @@ header {
 .logo img {
     width: 50px;
     border-radius: 50%;
+    box-shadow:var(--box-shadow-color) 0px 5px 15px;;
 }
 .logo i{
     position: absolute;
     margin-top:2px;
     margin-left: 20px;
     font-size: 33px;
+    color: var(--text-color-light);
 }
 .search-bar{
     display: flex;
     cursor: pointer;
     background: #fff;
-    padding: 8px;
+    padding: 6px;
     border-radius: 30px;
     align-items: center;
     box-shadow: 0 10px 25px var(--box-shadow-color);
@@ -70,6 +76,7 @@ header {
     display: flex;
     gap: 20px;
     list-style: none;
+    font-family:Ephesis;
 }
 .menu a{
     color: var(--text-color-light);
@@ -86,10 +93,12 @@ header {
 .icons{
     position: absolute;
     right: 5%;
-    font-size: 2.8rem;
+    top: 12%;
+    font-size: 2.5rem;
     color: var(--text-color-dark);
     cursor: pointer;
     display: none;
+    color: var(--text-color-light);
 }
 /* Hero Section Styles */
 .hero {
@@ -107,16 +116,16 @@ header {
 
 .hero h1 {
     font-size: 3em;
-    margin-bottom: 20px;
-    font-family: Young Serif;
-    display: inline-block;
+    font-family: PT Serif;
     font-size: 52px;
-    color: #f7f1fe;
+    margin-bottom: 20px;
+    color: #f51e30;
+    
 }
 .hero p {
     font-size: 1.2em;
     font-family: 'Courier New', Courier, monospace;
-    color: #f7f1fe;
+    color: #fff;
 }
 
 .hero .cta-btn {
@@ -143,6 +152,7 @@ header {
 }
 .section-heading{
     color: var(--text-color-light);
+    font-family: PT Serif;
 }
 .row {
     display: flex;
@@ -218,6 +228,9 @@ p {
 /*Testimonials section styles*/
 .test h1{
     text-align: center;
+    font-family: PT Serif;
+    font-size: 20px;
+    padding: 50px;
     color: var(--text-color-light);
 }
 .testimonials{
@@ -225,7 +238,7 @@ p {
 }
 figure.testimonial {
     font-family: 'Raleway', Arial, sans-serif;
-    margin: 10px;
+    margin: 15px;
     min-width: 300px;
     width: 100%;
     color: #333;
@@ -244,7 +257,7 @@ figure.testimonial img {
     vertical-align: middle;
 }
 figure.testimonial blockquote {
-    background-color: var(--accent-color);
+    background-color: var(--testimonial-color);
     padding: 25px 50px 25px 50px;
     font-size: 0.8em;
     font-weight: 500;
@@ -265,28 +278,19 @@ figure.testimonial blockquote:after {
 }
 figure.testimonial blockquote:before {
     top: 25px;
-    left: 20px;
+    left: 16px;
 }
 figure.testimonial blockquote:after {
     content: "\201D";
-    right: 20px;
-    bottom: 0;
-}
-figure.testimonial .arrow {
-    top: 100%;
-    width: 0;
-    height: 0;
-    border-left: 0 solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 25px solid var(--accent-color);
-    margin: 0;
+    right: 18px;
+    bottom: 20px;
 }
 figure.testimonial .author {
     bottom: 0;
     width: 100%;
     padding: 5px 25px;
     color: #000000;
-    background-color: var(--accent-color);
+    background-color: var(--testimonial-color);
     margin: 0;
     text-transform: uppercase;
 
@@ -304,7 +308,7 @@ figure.testimonial .author h5 span {
 /* Footer Styles */
 footer {
     background-color: var(--secondary-color);
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -325,6 +329,14 @@ footer {
 }
 .footer-links ul li a:hover{
     color: var(--primary-color);
+}
+/*Footer social media styles*/
+.social-media i{
+transition: transform .2s;
+font-size: 20px;
+}
+.social-media i:hover{
+transform: scale(1.1);
 }
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
@@ -362,6 +374,9 @@ footer {
         font-size: 15px;
         align-items: center;
     }
+    .section-heading{
+        padding: 40px;
+    }
     .icons{
         display: inline-flex;
     }
@@ -383,7 +398,7 @@ footer {
         background: rgba(0, 0, 0, 0.142);
         backdrop-filter: blur(50px);
         overflow: hidden;
-        transition: .3s ease;
+        transition: .1s ease;
     }
     #check:checked~.menu-bar{
         height: 17.7rem;
@@ -428,6 +443,9 @@ figure.testimonial blockquote:after {
     font-size: 25px;
     
 }
+.footer-links{
+    font-size: 15px;
+}
 }
 @media screen and (max-width: 480px) {
     /* Responsive styles for mobile phones */
@@ -464,7 +482,7 @@ figure.testimonial blockquote:after {
         max-width: 200px;
     }
     .testimonial{
-        animation: scroll 10s linear infinite;
+        animation: scroll 15s linear infinite;
 
     }
 @keyframes scroll {
@@ -478,5 +496,8 @@ figure.testimonial blockquote:after {
 figure.testimonial blockquote:before,
 figure.testimonial blockquote:after {
     font-size: 15px;
+}
+.footer-links{
+    font-size: 10px;
 }
 }
