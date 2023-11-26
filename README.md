@@ -2,7 +2,7 @@
 <h1 align="center">Shiksha Internship Platform</h1>
 
 <p align="center">
-  <img src="https://your-website.com/images/logo.png" alt="Shiksha Logo">
+  <img src="images/bg_image.jpg" alt="Shiksha Logo">
 </p>
 
 <p align="center">
