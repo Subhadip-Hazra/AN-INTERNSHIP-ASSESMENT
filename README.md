@@ -8,7 +8,7 @@
 
 Siksha Internship platform live:
 
-[![Demo View](https://subhadip-hazra.github.io/InfinityCore_Technologies_Internship_Project/#)
+[![Chat Now](https://img.shields.io/badge/Chat-Now%20Live-blue)](https://subhadip-hazra.github.io/InfinityCore_Technologies_Internship_Project/#)
 
 <p align="center">
   <em>Explore exciting internship opportunities, discover features, testimonials, and take a step towards your career goals!</em>
