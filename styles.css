@@ -367,6 +367,9 @@ transform: scale(1.1);
     .search-bar:hover input{
         width: 220px;
     }
+    .menu-bar{
+        top: 70px;
+    }
     .hero{
         border: none;
     }
@@ -486,7 +489,7 @@ figure.testimonial blockquote:after {
         width: 120px;
     }
     .menu-bar{
-        top: 54px;
+        top: 51px;
     }
     .hero{
         border: none;
