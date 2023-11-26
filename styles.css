@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Josefin+Sans:wght@100&family=Lilita+One&family=Martian+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Croissant+One&family=Fuggles&family=Josefin+Sans:wght@100&family=Lilita+One&family=Martian+Mono:wght@300&family=PT+Serif:ital,wght@1,700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&family=Ephesis&family=Lugrasimo&family=Roboto:wght@100&display=swap');
 /* My root variables for color scheme */
 :root {
     /* My color variables */
@@ -46,11 +47,19 @@ header {
     border-radius: 50%;
     box-shadow:var(--box-shadow-color) 0px 5px 15px;;
 }
+.logo h1{
+    position: absolute;
+    margin-top: -49px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: Caveat;
+    color: var(--text-color-light);
+}
 .logo i{
     position: absolute;
-    margin-top:2px;
-    margin-left: 20px;
-    font-size: 33px;
+    margin-top:6px;
+    margin-left: 85px;
+    font-size: 27px;
     color: var(--text-color-light);
 }
 .search-bar{
@@ -76,13 +85,13 @@ header {
     display: flex;
     gap: 20px;
     list-style: none;
-    font-family:Ephesis;
 }
 .menu a{
     color: var(--text-color-light);
     text-decoration: solid;
     background-color: none;
-    
+    font-family: Inter;
+    font-size: 15px;    
 }
 .menu :hover{
     color: var(--primary-color);
@@ -344,8 +353,13 @@ transform: scale(1.1);
     .logo img {
         width: 40px;
     }
+    .logo h1{
+        margin-top: -42px;
+        margin-left: 42px;
+    }
     .search-bar{
         margin-right: 15%;
+        padding: 4px;
     }
     .search-bar input {
         width: 0px;
@@ -451,6 +465,16 @@ figure.testimonial blockquote:after {
     /* Responsive styles for mobile phones */
     .logo img {
         width: 30px;
+    }
+    .logo h1{
+        margin-top: -32px;
+        margin-left: 34px;
+        font-size: 20px;
+    }
+    .logo i{
+        margin-top: 3px;
+        margin-left: 66px;
+        font-size: 20px;
     }
     .search-bar{
         margin-right: 20%;
