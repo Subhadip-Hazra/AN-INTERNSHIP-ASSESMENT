@@ -1,4 +1,4 @@
-<h1 align="center">InfinityCoreTechnologies Internship Assignments</h1>
+<h1 align="center">An Internship Assignments</h1>
 <h1 align="center">Shiksha Internship Platform</h1>
 
 <p align="center">
